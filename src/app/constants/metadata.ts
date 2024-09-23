@@ -1,0 +1,23 @@
+export const META = {
+  title: '(주)에쓰에쓰컴퍼니: 재생에너지 안전관리 모니터링 플랫폼',
+  siteName: 'SSCompany Co. | 주식회사 에쓰에쓰컴퍼니',
+  description: '미래를 여는 신재생에너지 기업, Smart Technologies와 Service를 통한 신뢰를 제공하는 기업',
+  keyword: [
+    '에쓰에쓰컴퍼니',
+    '에스에스컴퍼니',
+    'ss컴퍼니',
+    'SS컴퍼니',
+    'SS',
+    '태양광',
+    '태양광발전소',
+    '발전소',
+    '모니터링',
+    '인버터',
+    'ABB',
+    '안전관리',
+  ],
+  url: 'https://',
+  googleVerification: 'xxx',
+  naverVerification: 'xxx',
+  ogImage: '/opengraph_image.JPG',
+} as const

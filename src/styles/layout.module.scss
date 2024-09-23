@@ -1,0 +1,47 @@
+@import './variables';
+
+@media (min-width: $tablet) {
+  .inner {
+    width: 76.38vw;
+    margin: 0 auto;
+    position: relative;
+  }
+  .head {
+    z-index: 9;
+    background: linear-gradient(
+      to top,
+      rgba(0,0,0,0),
+      rgba(0,0,0,.25),
+      rgba(0,0,0,.5),
+      rgba(0,0,0,.75),
+      rgba(0,0,0,.75)
+    );
+    position: fixed;
+    width: 100%;
+
+    .inner { height: 6.25rem; }
+
+    .logo {
+      height: 2.68rem;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+    }
+
+    .main-menu {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      display: flex;
+      width: 25rem;
+      height: 3.125rem;
+
+      .item {
+        width: 6.25rem;
+      }
+    }
+  }
+
+}

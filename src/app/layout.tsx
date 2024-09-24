@@ -4,7 +4,7 @@ import styles from '../styles/layout.module.scss'
 import { META } from './constants/metadata'
 import Link from 'next/link'
 import { Nanum_Gothic } from 'next/font/google'
-import Menu from './components/Menu'
+import Menu from './components/Menu/Menu'
 
 const nanum = Nanum_Gothic({
 

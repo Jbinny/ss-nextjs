@@ -4,6 +4,7 @@ import styles from '../styles/layout.module.scss'
 import { META } from './constants/metadata'
 import Link from 'next/link'
 import { Nanum_Gothic } from 'next/font/google'
+import Menu from './components/Menu'
 
 const nanum = Nanum_Gothic({
 
@@ -56,33 +57,7 @@ export default function RootLayout({
               <img src="/logo_white.png" className={styles.logo} alt="Logo" />
             </Link>
 
-            <ul className={styles['main-menu']}>
-              <li className={styles.item}>
-                <div className="item__name">회사소개</div>
-                <ul className="item__contents">
-                  <li><Link href='/ceo' className='link'>CEO 인사말</Link></li>
-                </ul>
-              </li>
-              <li className={styles.item}>
-                <div className="item__name">사업소개</div>
-                <ul className="item__contents">
-                  <li><Link href='/management' className='link'>안전관리</Link></li>
-                </ul>
-              </li>
-              <li className={styles.item}>
-                <div className="item__name">제품정보</div>
-                <ul className="item__contents">
-                  <li><Link href='/inverter' className='link'>인버터</Link></li>
-                </ul>
-              </li>
-              <li className={styles.item}>
-                <div className="item__name">고객지원</div>
-                <ul className="item__contents">
-                  <li><Link href='/catalog' className='link'>카탈로그</Link></li>
-                </ul>
-              </li>
-              
-            </ul>
+            <Menu />
           </div>
         </header>
         {children}

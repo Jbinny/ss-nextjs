@@ -2,7 +2,7 @@
 
 @media (min-width: $tablet) {
   .inner {
-    width: 76.38vw;
+    width: 90vw;
     margin: 0 auto;
     position: relative;
   }
@@ -29,19 +29,7 @@
       left: 0;
       margin: auto;
     }
-
-    .main-menu {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      display: flex;
-      width: 25rem;
-      height: 3.125rem;
-
-      .item {
-        width: 6.25rem;
-      }
-    }
+    
   }
 
 }

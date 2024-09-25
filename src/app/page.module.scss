@@ -1,0 +1,34 @@
+@import '../styles/variables';
+
+.videoContainer {
+  position: relative;
+  display: flex;
+
+  .video {
+    width: 100vw;
+  }
+
+  .video__cover {
+    background-color: rgba(0,0,0,.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: $tablet) {
+  .videoContainer {
+    .video {
+      margin-top: 4rem;  
+    }   
+  }
+}
+@media (min-width: $tablet) {
+  .videoContainer {
+    .video {
+      margin-top: -6rem;  
+    }   
+  }
+}

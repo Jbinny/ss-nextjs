@@ -1,11 +1,107 @@
 @import './variables';
 
+.foot {
+  background-color: #272727;
+  border-top: 1px solid #333;
+  padding-bottom: 20px;
+
+  > .inner {
+    padding: 20px 0 20px 0;
+  }
+
+  .foot-menu {
+    display: flex;
+    justify-content: center;
+
+    li {
+      position: relative;
+      
+      &::before {
+        content: '';
+        background-color: #555;
+        position: absolute;
+        width: 3px;
+        height: 3px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+      &:first-child::before {
+        display: none;
+      }
+
+      .foot__link {
+        display: block;
+        color: #ccc;
+        font : {
+          size: .8rem;
+          weight: 700;
+        }
+        padding: .3rem;
+        margin: .5rem;
+        box-sizing: border-box;
+
+        &.blue {
+          color: #3d81e0;
+        }
+      }
+    }
+  }
+
+  .btn-group {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+    .btn {
+      font-size: .8rem;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-right: .625rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .info {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .info-logo {
+      margin-top: 0.8rem;
+    }
+
+    .info-text {
+      text-align: left;
+  
+      span {
+        margin-right: 1.25rem;
+        color: #999;
+        font-size: 0.8rem;
+  
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    color: #999;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+}
+
 @media (min-width: $tablet) {
   .inner {
     width: 90vw;
     margin: 0 auto;
     position: relative;
   }
+
   .head {
     z-index: 9;
     background: linear-gradient(
@@ -19,7 +115,7 @@
     position: fixed;
     width: 100%;
 
-    .inner { height: 6.25rem; }
+    > .inner { height: 6.25rem; }
 
     .logo {
       height: 2.68rem;
@@ -29,7 +125,45 @@
       left: 0;
       margin: auto;
     }
-    
   }
 
+  .foot {
+    .info {
+      .info-logo {
+        margin-right: 30px;
+      }
+    }    
+  }
+}
+
+@media (max-width: $tablet) {
+  .head {
+    z-index: 9;
+    background-color: rgba(0,0,0,.7);
+    position: fixed;
+    width: 100%;
+
+    > .inner { height: 4rem; }
+
+    .logo {
+      height: 2rem;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  }
+
+  .foot {
+    .info {
+      .info-logo {
+        margin-bottom: 1.5rem;
+      }
+      .info-text {
+        text-align: center;
+      }
+    }    
+  }
 }
